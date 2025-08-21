@@ -21,5 +21,29 @@ namespace CalculadoraForms
         {
 
         }
+
+        private void numero_Click(object sender, EventArgs e)
+        {
+            // Obter o botão que está chamando esse evento:
+            Button botaoClicado = (Button)sender;   
+
+            // Adicionar o Text do botão clicado no TextBox:
+            txbTela.Text += botaoClicado.Text;
+        }
+        private void operador_click(object sender, EventArgs e)
+        {
+
+            // Obter o botão que está chamando esse evento:
+            Button botaoClicado = (Button)sender;
+
+            // Adicionar o Text do botão clicado no TextBox:
+            txbTela.Text += botaoClicado.Text;
+        }
+
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
